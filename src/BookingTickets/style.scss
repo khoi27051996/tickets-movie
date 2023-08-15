@@ -1,0 +1,121 @@
+.bgMovie {
+  background-image: url(../BookingTickets/bg-movie.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  filter: brightness(40%);
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+.text-light {
+  padding-left: 290px;
+}
+.chair {
+  color: white;
+  border: 1px solid white;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &.booking {
+    border: transparent;
+    background-color: red;
+    color: white;
+  }
+
+  &.booked {
+    border: transparent;
+    background-color: black;
+    color: white;
+    pointer-events: none;
+  }
+}
+.screen {
+  width: 600px;
+  height: 10px;
+  background-color: gray;
+  border: 1px solid gray;
+  border-radius: 100% 100% 0 0;
+  box-shadow: 0 5px 10px 0 white;
+  margin-left: 80px;
+}
+
+.table {
+  height: 300px;
+  overflow-y: auto;
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 35px;
+  }
+  .bgMovie {
+    height: 1320px;
+    background-position: center;
+    background-size: center;
+  }
+  .content {
+    right: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chair {
+    font-weight: 300;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .text-light {
+    padding-left: 220px;
+    font-size: 25px;
+  }
+  .screen {
+    width: 450px;
+    margin-left: 35px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .chair {
+    font-weight: 300;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .screen {
+    width: 350px;
+    margin-left: 35px;
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  .bgMovie {
+    height: 998px;
+    background-position: center;
+    background-size: center;
+  }
+  .text-light {
+    padding-left: 180px;
+    font-size: 20px;
+  }
+}
